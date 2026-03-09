@@ -25,10 +25,10 @@ LDD_MODULE_SUBDIRS = misc-modules scull
 #endef
 
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
-define LDD_INSTALL_TARGET_CMDS
-	$(INSTALL) -m 0755 $(@D)/scull/*.ko $(TARGET_DIR)/bin
-	$(INSTALL) -m 0755 $(@D)/misc-modules/*.ko $(TARGET_DIR)/bin
-endef
+#define LDD_INSTALL_TARGET_CMDS
+#	$(INSTALL) -m 0755 $(@D)/scull/*.ko $(TARGET_DIR)/bin
+#	$(INSTALL) -m 0755 $(@D)/misc-modules/*.ko $(TARGET_DIR)/bin
+#endef
 
 $(eval $(kernel-module))
 $(eval $(generic-package))

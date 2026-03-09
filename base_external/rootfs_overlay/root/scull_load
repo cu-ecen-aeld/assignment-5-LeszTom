@@ -11,9 +11,6 @@ else
     group="wheel"
 fi
 
-# invoke insmod with all arguments we got
-# and use a pathname, as insmod doesn't look in . by default
-#insmod /bin/$module.ko $* || exit 1
 modprobe $module.ko $* || exit 1
 
 # retrieve major number
